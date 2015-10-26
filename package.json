@@ -2,6 +2,7 @@
   "name": "barthes-frontend",
   "version": "0.0.1",
   "description": "An editor for fragmentary writings.",
+  "main": "src/main",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/baphomet-berlin/barthes-frontend.git"
@@ -13,8 +14,6 @@
   },
   "homepage": "https://github.com/baphomet-berlin/barthes-frontend#readme",
   "devDependencies": {
-    "jsx-loader": "^0.13.2",
-    "react": "^0.14.0",
     "babel-core": "^5.6.15",
     "babel-loader": "^5.3.1",
     "css-loader": "^0.21.0",
