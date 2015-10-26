@@ -21,12 +21,14 @@
     "npm": "^3.3.9",
     "sass-loader": "^3.1.1",
     "style-loader": "^0.13.0",
-    "webpack": "^1.12.2"
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.1"
   },
   "dependencies": {
     "react": "^0.13.3"
   },
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack-dev-server --progress --colors"
   }
 }

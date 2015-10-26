@@ -1,7 +1,10 @@
 var path = require('path')
 var nodeModules = path.resolve(__dirname, 'node_modules');
 var config = {
-  entry: path.resolve(__dirname, 'src/main.js'),
+  entry: [
+    'webpack-dev-server/client?http://localhost:8080',
+    path.resolve(__dirname, 'src/main.js')
+  ],
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js'
