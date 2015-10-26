@@ -11,6 +11,9 @@ var config = {
       test: /\.js$/, 
       loader: 'babel',
       exclude: nodeModules
+    }, {
+      test: /\.scss$/,
+      loader: 'style!css!sass'
     }]
   }
 };
