@@ -12,14 +12,16 @@ var config = {
     filename: 'bundle.js'
   },
   module: {
-    loaders: [{
-      test: /\.js$/, 
-      loader: 'babel',
-      exclude: nodeModules
-    }, {
-      test: /\.scss$/,
-      loader: ExtractTextPlugin.extract('style', 'css!sass')
-    }]
+    loaders: [
+      {
+        test: /\.js$/, 
+        loader: 'babel',
+        exclude: nodeModules
+      }, {
+        test: /\.scss$/,
+        loader: 'style!css!sass'
+      }
+    ]
   },
   plugins: [
       new ExtractTextPlugin('bundle.css')
