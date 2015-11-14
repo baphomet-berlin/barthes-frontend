@@ -17,3 +17,13 @@ Components live in `src/js/components` ("Components dir").
 - `ComponentX.js` loads its own css. We could automatise this in the future.
 - `Subcomponent`s are components only used within their parent. If they come to get used otherwise, they get their own FLD.
 - `Subcomponents are loaded by `ComponentX.js`s 
+
+## Components scope
+
+The components only handle data represented in their own (*virtual) DOM or emit events for a global broker (see Events (TODO)).
+
+## Components List
+
+### Text Area
+
+The main text area.
