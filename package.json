@@ -22,11 +22,12 @@
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.12.1"
   },
-  "dependencies": {
-    "react": "^0.13.3"
-  },
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server --progress --colors"
+  },
+  "dependencies": {
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2"
   }
 }
