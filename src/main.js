@@ -1,9 +1,9 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import './style/main.scss'
-import TextBox from './components/text-box/TextBox'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './style/main.scss';
+import TextBox from './components/text-box/TextBox.jsx';
 
-main()
+main();
 
 function main() {
   ReactDOM.render(<TextBox />, document.getElementById('text-box'));
