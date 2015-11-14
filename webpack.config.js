@@ -1,5 +1,7 @@
 var path = require('path')
-var nodeModules = path.resolve(__dirname, 'node_modules');
+var nodeModules = path.resolve(__dirname, 'node_modules')
+var ExtractTextPlugin = require('extract-text-webpack-plugin')
+
 var config = {
   entry: [
     'webpack-dev-server/client?http://localhost:8080',
@@ -16,9 +18,12 @@ var config = {
       exclude: nodeModules
     }, {
       test: /\.scss$/,
-      loader: 'style!css!sass'
+      loader: ExtractTextPlugin.extract('style', 'css!sass')
     }]
-  }
+  },
+  plugins: [
+      new ExtractTextPlugin('bundle.css')
+  ]
 };
 
-module.exports = config;
+module.exports = config
