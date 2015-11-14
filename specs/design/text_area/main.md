@@ -69,3 +69,4 @@ Gallimard Folio: Baskerville Old Face
 
 ### Verdict
 
+Merryweather, Vollkorn and Libre Baskerville seem to be the best candidates.
