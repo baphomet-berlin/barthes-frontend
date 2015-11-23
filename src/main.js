@@ -6,5 +6,5 @@ import TextBox from './components/text-box/TextBox.jsx';
 main();
 
 function main() {
-  ReactDOM.render(<TextBox />, document.getElementById('text-box'));
+  ReactDOM.render(<TextBox />, document.getElementById('text-box-wrapper'));
 }
