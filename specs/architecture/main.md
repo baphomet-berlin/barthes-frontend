@@ -51,3 +51,7 @@ The components only handle data represented in their own (*virtual) DOM or emit 
 ## Logic
 
 1. If fragment does not have a title, fragment title is first sentence until a set number of chars
+
+## Presentation
+
+1. For user-assigned titles we use Book 11 (title is right-aligned and bold)
