@@ -14,9 +14,9 @@ Components live in `src/js/components` ("Components dir").
            subcomponent.scss
 
 - `main.js` loads all components.
-- `ComponentX.js` loads its own css. We could automatise this in the future.
+- `ComponentX.jsx` loads its own css. We could automatise this in the future.
 - `Subcomponent`s are components only used within their parent. If they come to get used otherwise, they get their own FLD.
-- `Subcomponents are loaded by `ComponentX.js`s 
+- `Subcomponent`s are loaded by `ComponentX.jsx`s 
 
 ## Components scope
 
@@ -25,6 +25,8 @@ The components only handle data represented in their own (*virtual) DOM or emit 
 ## Anatomy of the project
 
 ### Generative Grammar for Components
+
+```
 
 - TextBox ::= Placeholder | Fragment
 
@@ -43,6 +45,8 @@ The components only handle data represented in their own (*virtual) DOM or emit 
 - QuotationMeta ::= ( AcademicQuotation | [Date] (Author | Website | Periodical | Book) | Footnote )
 ​
 - OriginalParagraph ::= Sentence
+
+```
 ​
 ### Logic
 ​
