@@ -55,3 +55,6 @@ The components only handle data represented in their own (*virtual) DOM or emit 
 ## Presentation
 
 1. For user-assigned titles we use Book 11 (title is right-aligned and bold)
+2. For auto-assigned titles (Logic 1) we use Book 4 chapter start
+3. Each paragraph is indented as shown in Book 2
+4. The title for each paragraph is bold and right-aligned
